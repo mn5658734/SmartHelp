@@ -1,0 +1,108 @@
+.layout {
+  display: flex;
+  min-height: 100vh;
+  background: #f5f6f8;
+}
+
+.sidebar {
+  width: 240px;
+  background: #1a1d29;
+  color: #e4e6eb;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.sidebar-header {
+  padding: 1.25rem 1rem;
+  border-bottom: 1px solid #2d3142;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.logo {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+.role-badge {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  padding: 0.2rem 0.5rem;
+  background: #3b82f6;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.nav {
+  flex: 1;
+  padding: 0.75rem 0;
+  overflow-y: auto;
+}
+
+.nav-link {
+  display: block;
+  padding: 0.6rem 1rem;
+  color: #9ca3af;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: all 0.15s;
+}
+
+.nav-link:hover {
+  color: #e4e6eb;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.nav-link.active {
+  color: #3b82f6;
+  background: rgba(59, 130, 246, 0.15);
+  border-left: 3px solid #3b82f6;
+}
+
+.sidebar-footer {
+  padding: 1rem;
+  border-top: 1px solid #2d3142;
+}
+
+.switch-role {
+  display: block;
+  font-size: 0.8rem;
+  color: #6b7280;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+}
+
+.switch-role:hover {
+  color: #3b82f6;
+}
+
+.switch-role.back-home {
+  margin-top: 0.25rem;
+}
+
+.switch-role.back-home:hover {
+  color: #3b82f6;
+}
+
+.user-info {
+  font-size: 0.8rem;
+  color: #9ca3af;
+}
+
+.user-email {
+  display: block;
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+.main {
+  flex: 1;
+  overflow: auto;
+  padding: 1.5rem;
+}
