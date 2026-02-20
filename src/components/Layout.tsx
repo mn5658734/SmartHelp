@@ -1,4 +1,4 @@
-import { Outlet, NavLink, useNavigate } from 'react-router-dom';
+import { Outlet, NavLink, useNavigate, Link } from 'react-router-dom';
 import { useStore } from '../store/useStore';
 import { mockUsers } from '../data/mockData';
 import './Layout.css';
@@ -39,7 +39,13 @@ export default function Layout() {
     <div className="layout">
       <aside className="sidebar">
         <div className="sidebar-header">
-          <h1 className="logo">SmartHelp</h1>
+          <Link to="/" className="logo-link">
+            <svg className="home-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+              <polyline points="9 22 9 12 15 12 15 22" />
+            </svg>
+            <h1 className="logo">SmartHelp</h1>
+          </Link>
           <div className="role-toggle">
             <button
               type="button"

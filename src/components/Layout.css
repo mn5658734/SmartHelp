@@ -21,6 +21,30 @@
   gap: 1rem;
 }
 
+.logo-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 0.2s;
+}
+
+.logo-link:hover {
+  opacity: 0.9;
+}
+
+.home-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #6b7280;
+  flex-shrink: 0;
+}
+
+.logo-link:hover .home-icon {
+  color: #3b82f6;
+}
+
 .logo {
   font-size: 1.25rem;
   font-weight: 700;
