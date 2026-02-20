@@ -40,7 +40,22 @@ export default function Layout() {
       <aside className="sidebar">
         <div className="sidebar-header">
           <h1 className="logo">SmartHelp</h1>
-          <span className="role-badge">{currentUser?.role}</span>
+          <div className="role-toggle">
+            <button
+              type="button"
+              className={`role-toggle-btn ${!isAdmin ? 'active' : ''}`}
+              onClick={() => !isAdmin || switchRole()}
+            >
+              Agent
+            </button>
+            <button
+              type="button"
+              className={`role-toggle-btn ${isAdmin ? 'active' : ''}`}
+              onClick={() => isAdmin || switchRole()}
+            >
+              Admin
+            </button>
+          </div>
         </div>
         <nav className="nav">
           {nav.map((item) => (
