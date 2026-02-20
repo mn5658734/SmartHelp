@@ -1,0 +1,70 @@
+.feedback-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.feedback-card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.feedback-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.feedback-ticket {
+  font-weight: 600;
+  color: #3b82f6;
+  text-decoration: none;
+}
+
+.feedback-ticket:hover {
+  text-decoration: underline;
+}
+
+.feedback-status {
+  font-size: 0.75rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.status-submitted { background: #dbeafe; color: #1d4ed8; }
+.status-reviewed { background: #fef3c7; color: #92400e; }
+.status-action-taken { background: #d1fae5; color: #065f46; }
+
+.feedback-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.feedback-row {
+  font-size: 0.9rem;
+}
+
+.feedback-row .label {
+  font-weight: 500;
+  color: #6b7280;
+  margin-right: 0.5rem;
+}
+
+.feedback-row.admin-comments {
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid #f3f4f6;
+}
+
+.feedback-footer {
+  margin-top: 0.75rem;
+  font-size: 0.8rem;
+  color: #6b7280;
+  display: flex;
+  justify-content: space-between;
+}

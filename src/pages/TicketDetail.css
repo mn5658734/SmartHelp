@@ -1,0 +1,207 @@
+.ticket-detail-header {
+  margin-bottom: 1rem;
+}
+
+.back-btn {
+  background: none;
+  border: none;
+  color: #3b82f6;
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.back-btn:hover {
+  text-decoration: underline;
+}
+
+.ticket-detail-header h1 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.ticket-detail-layout {
+  display: grid;
+  grid-template-columns: 1fr 320px 240px;
+  gap: 1.5rem;
+}
+
+@media (max-width: 1100px) {
+  .ticket-detail-layout {
+    grid-template-columns: 1fr 320px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ticket-detail-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.ticket-thread,
+.ticket-actions,
+.ticket-ai-panel {
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  padding: 1rem;
+}
+
+.ticket-thread h3,
+.ticket-actions h3,
+.ticket-ai-panel h3 {
+  margin: 0 0 1rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.message {
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+  border-radius: 6px;
+  border-left: 3px solid #e5e7eb;
+}
+
+.message-customer { border-left-color: #3b82f6; background: #eff6ff; }
+.message-agent { border-left-color: #10b981; background: #ecfdf5; }
+.message-internal { border-left-color: #f59e0b; background: #fffbeb; }
+.message-system { border-left-color: #6b7280; background: #f9fafb; }
+
+.message-meta {
+  font-size: 0.8rem;
+  color: #6b7280;
+  margin-bottom: 0.25rem;
+}
+
+.message-author {
+  font-weight: 500;
+  margin-right: 0.5rem;
+}
+
+.message-content {
+  font-size: 0.9rem;
+}
+
+.action-group {
+  margin-bottom: 1rem;
+}
+
+.action-group label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 0.25rem;
+}
+
+.action-group select,
+.action-group textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.action-group textarea {
+  resize: vertical;
+}
+
+.action-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.btn-primary {
+  background: #3b82f6;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background: #2563eb;
+}
+
+.btn-primary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-secondary {
+  background: #fff;
+  color: #374151;
+  border: 1px solid #e5e7eb;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  background: #f9fafb;
+}
+
+.btn-sm {
+  margin-top: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.85rem;
+}
+
+.resolution-info {
+  padding: 0.75rem;
+  background: #f0fdf4;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.ai-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.ai-confidence,
+.ai-predicted,
+.ai-sla {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+}
+
+.ai-confidence span,
+.ai-predicted span,
+.ai-sla span {
+  color: #6b7280;
+}
+
+.modal-form label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin: 0.75rem 0 0.25rem;
+}
+
+.modal-form input,
+.modal-form select,
+.modal-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+}
+
+.modal-form textarea {
+  resize: vertical;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1.25rem;
+}
