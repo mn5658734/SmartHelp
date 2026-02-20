@@ -55,11 +55,8 @@ export default function Layout() {
           ))}
         </nav>
         <div className="sidebar-footer">
-          <button type="button" onClick={switchRole} className="switch-role">
-            Switch to {isAdmin ? 'Agent' : 'Admin'}
-          </button>
-          <NavLink to="/" className="switch-role back-home">
-            Back to Home
+          <NavLink to="/" className="back-home">
+            ← Back to Home
           </NavLink>
           <div className="user-info">
             <span>{currentUser?.name}</span>

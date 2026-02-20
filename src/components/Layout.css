@@ -17,9 +17,8 @@
   padding: 1.25rem 1rem;
   border-bottom: 1px solid #2d3142;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.5rem;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .logo {
@@ -30,13 +29,39 @@
   letter-spacing: -0.02em;
 }
 
-.role-badge {
-  font-size: 0.65rem;
-  text-transform: uppercase;
-  padding: 0.2rem 0.5rem;
+.role-toggle {
+  display: flex;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  padding: 3px;
+  gap: 2px;
+}
+
+.role-toggle-btn {
+  flex: 1;
+  padding: 0.4rem 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  background: transparent;
+  color: #9ca3af;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.role-toggle-btn:hover {
+  color: #e4e6eb;
+}
+
+.role-toggle-btn.active {
   background: #3b82f6;
-  border-radius: 4px;
-  font-weight: 600;
+  color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.role-toggle-btn.active:hover {
+  background: #2563eb;
 }
 
 .nav {
@@ -70,7 +95,7 @@
   border-top: 1px solid #2d3142;
 }
 
-.switch-role {
+.back-home {
   display: block;
   font-size: 0.8rem;
   color: #6b7280;
@@ -78,15 +103,7 @@
   margin-bottom: 0.5rem;
 }
 
-.switch-role:hover {
-  color: #3b82f6;
-}
-
-.switch-role.back-home {
-  margin-top: 0.25rem;
-}
-
-.switch-role.back-home:hover {
+.back-home:hover {
   color: #3b82f6;
 }
 
